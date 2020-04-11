@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src='angular.min.js'></script>
+    <script src="app-upper-case.js"></script>
+    <title>Upper Case Name</title>
+  </head>
+  <body ng-app='UpperCase'>
+    <h1>Covert Text to Upper Case</h1>
+    <div ng-controller='UpperCaseController'>
+      Insert a Text
+      <input type="text" ng-model="name" ng-blur="upper();">
+    </div>
+  </body>
+</html>

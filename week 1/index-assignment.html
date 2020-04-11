@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app-assignment.js"></script>
+    <title>Diet Check</title>
+  </head>
+  <body ng-app='DietCheck'>
+    <h1>This app will the check your diet for you!</h1>
+    <div ng-controller='DietCheckController'>
+      <div>
+        Insert your diet plan here:
+        <input type="text" ng-model="name">
+      </div>
+      <div>
+        <button ng-click="calculateDiet()">Check If Too Much</button>
+        <h2>{{message}}</h2>
+      </div>
+
+    </div>
+  </body>
+</html>
